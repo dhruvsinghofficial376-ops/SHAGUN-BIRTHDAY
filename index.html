@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Shagun ❤️</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:linear-gradient(135deg,#ff1744,#ff4081);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+.hero{
+padding:60px 20px;
+}
+
+h1{
+font-size:3rem;
+animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{ text-shadow:0 0 10px white;}
+to{ text-shadow:0 0 30px yellow;}
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+padding:20px;
+}
+
+.gallery img{
+width:300px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(255,255,255,0.5);
+}
+
+.card{
+background:rgba(255,255,255,0.15);
+margin:20px;
+padding:20px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+}
+
+button{
+padding:15px 30px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:white;
+color:#ff1744;
+cursor:pointer;
+font-weight:bold;
+}
+
+#surprise{
+display:none;
+font-size:28px;
+margin-top:20px;
+}
+
+.heart{
+position:fixed;
+color:red;
+font-size:25px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-100vh);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+<h1>🎂 Happy Birthday Shagun ❤️</h1>
+
+<h2>
+Happy Birthday My Love ❤️<br>
+Thank you for being the most beautiful part of my life.
+</h2>
+
+<p>
+From Your Love ❤️<br>
+Dhruv Singh
+</p>
+</div>
+
+<div class="gallery">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+</div>
+
+<div class="card">
+<h2>💌 Love Letter</h2>
+
+<p>
+My Dearest Shagun,
+
+On your special day, I just want to thank you for coming into my life.
+You are my happiness, my comfort, and my favorite person.
+
+Every moment with you becomes a beautiful memory.
+Your smile brightens my darkest days and your love gives me strength.
+
+I wish you endless happiness, success, and all the love in the world.
+
+Happy Birthday, My Love ❤️
+
+Forever Yours,<br>
+Dhruv ❤️
+</p>
+</div>
+
+<div class="card">
+<h2>❤️ Reasons Why I Love You</h2>
+
+<p>
+❤️ Your beautiful smile<br>
+❤️ Your caring heart<br>
+❤️ The way you understand me<br>
+❤️ The happiness you bring into my life<br>
+❤️ Because you are simply YOU
+</p>
+</div>
+
+<div class="card">
+<h2>🎉 Our Journey</h2>
+<p>
+Relationship Started ❤️<br>
+4 December 2023
+</p>
+
+<p>
+Birthday Girl 🎂<br>
+3 July 2006
+</p>
+</div>
+
+<button onclick="showSurprise()">Click For Surprise 🎁</button>
+
+<div id="surprise">
+❤️ I LOVE YOU SHAGUN ❤️
+<br><br>
+🌹 Forever & Always 🌹
+</div>
+
+<script>
+function showSurprise(){
+document.getElementById("surprise").style.display="block";
+}
+
+for(let i=0;i<25;i++){
+let heart=document.createElement("div");
+heart.innerHTML="❤️";
+heart.className="heart";
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(Math.random()*5+5)+"s";
+document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
