@@ -6,170 +6,237 @@
 <title>Happy Birthday Shagun ❤️</title>
 
 <style>
-body{
+*{
 margin:0;
-font-family:Arial, sans-serif;
-background:linear-gradient(135deg,#ff1744,#ff4081);
-color:white;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background: linear-gradient(135deg,#ff9a9e,#fecfef);
 text-align:center;
+color:white;
 overflow-x:hidden;
 }
 
-.hero{
-padding:60px 20px;
+.container{
+padding:30px 15px;
 }
 
 h1{
 font-size:3rem;
-animation: glow 2s infinite alternate;
+margin-bottom:10px;
 }
 
-@keyframes glow{
-from{ text-shadow:0 0 10px white;}
-to{ text-shadow:0 0 30px yellow;}
-}
-
-.gallery{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-padding:20px;
-}
-
-.gallery img{
-width:300px;
-border-radius:20px;
-box-shadow:0 0 20px rgba(255,255,255,0.5);
+.subtitle{
+font-size:1.2rem;
+margin-bottom:30px;
 }
 
 .card{
 background:rgba(255,255,255,0.15);
-margin:20px;
-padding:20px;
+backdrop-filter: blur(10px);
+padding:25px;
+margin:20px auto;
+border-radius:25px;
+max-width:900px;
+box-shadow:0 8px 25px rgba(0,0,0,0.15);
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.gallery img{
+width:280px;
+max-width:90%;
 border-radius:20px;
-backdrop-filter:blur(10px);
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
 }
 
 button{
-padding:15px 30px;
+padding:15px 35px;
 font-size:18px;
 border:none;
-border-radius:30px;
+border-radius:50px;
 background:white;
-color:#ff1744;
+color:#ff4081;
 cursor:pointer;
+margin-top:20px;
 font-weight:bold;
+}
+
+button:hover{
+transform:scale(1.05);
 }
 
 #surprise{
 display:none;
-font-size:28px;
-margin-top:20px;
+margin-top:25px;
+font-size:22px;
+line-height:1.8;
+}
+
+footer{
+margin:40px 0;
+font-size:24px;
+font-weight:bold;
 }
 
 .heart{
 position:fixed;
-color:red;
+bottom:-50px;
 font-size:25px;
-animation:float 6s linear infinite;
+animation:float 5s linear infinite;
+pointer-events:none;
 }
 
 @keyframes float{
-0%{transform:translateY(100vh);}
-100%{transform:translateY(-100vh);}
+0%{
+transform:translateY(0);
+opacity:1;
+}
+100%{
+transform:translateY(-110vh);
+opacity:0;
+}
 }
 </style>
 </head>
 
 <body>
 
-<div class="hero">
+<div class="container">
+
 <h1>🎂 Happy Birthday Shagun ❤️</h1>
 
-<h2>
-Happy Birthday My Love ❤️<br>
-Thank you for being the most beautiful part of my life.
-</h2>
-
-<p>
-From Your Love ❤️<br>
-Dhruv Singh
+<p class="subtitle">
+Birthday Girl 👑 <br>
+03 July 2006 ❤️
 </p>
-</div>
-
-<div class="gallery">
-<img src="photo1.jpg">
-<img src="photo2.jpg">
-</div>
 
 <div class="card">
-<h2>💌 Love Letter</h2>
-
+<h2>💌 A Message For You</h2>
+<br>
 <p>
-My Dearest Shagun,
+Dear Shagun,
 
-On your special day, I just want to thank you for coming into my life.
-You are my happiness, my comfort, and my favorite person.
+3 July sirf ek date nahi hai,
+ye woh din hai jab meri zindagi ki sabse khoobsurat ladki is duniya mein aayi.
 
-Every moment with you becomes a beautiful memory.
-Your smile brightens my darkest days and your love gives me strength.
+Tumhari smile meri khushi hai,
+tumhari awaaz mera sukoon hai,
+aur tumhara saath meri sabse badi blessing hai.
 
-I wish you endless happiness, success, and all the love in the world.
+Thank you for being a part of my life.
 
-Happy Birthday, My Love ❤️
+Happy Birthday My Love ❤️
 
-Forever Yours,<br>
-Dhruv ❤️
+<br><br>
+— Dhruv ❤️
 </p>
 </div>
 
 <div class="card">
 <h2>❤️ Reasons Why I Love You</h2>
+<br>
+<p>💖 Your beautiful smile</p>
+<p>💖 Your caring heart</p>
+<p>💖 The way you understand me</p>
+<p>💖 The happiness you bring into my life</p>
+<p>💖 Your cute little expressions</p>
+<p>💖 Because you are simply YOU</p>
+</div>
 
-<p>
-❤️ Your beautiful smile<br>
-❤️ Your caring heart<br>
-❤️ The way you understand me<br>
-❤️ The happiness you bring into my life<br>
-❤️ Because you are simply YOU
-</p>
+<div class="card">
+<h2>📸 Beautiful Memories</h2>
+<br>
+
+<div class="gallery">
+
+<img src="shagun1.jpg">
+<img src="shagun2.jpg">
+<img src="shagun3.jpg">
+
+</div>
+
 </div>
 
 <div class="card">
 <h2>🎉 Our Journey</h2>
-<p>
-Relationship Started ❤️<br>
-4 December 2023
-</p>
-
-<p>
-Birthday Girl 🎂<br>
-3 July 2006
-</p>
+<br>
+<p>❤️ Relationship Started</p>
+<p>04 December 2023</p>
 </div>
 
-<button onclick="showSurprise()">Click For Surprise 🎁</button>
+<button onclick="showSurprise()">
+🎁 Click For Surprise
+</button>
 
 <div id="surprise">
-❤️ I LOVE YOU SHAGUN ❤️
+
+❤️ Dear Shagun ❤️
+
 <br><br>
+
+No matter where life takes us,
+I will always cherish every moment spent with you.
+
+<br><br>
+
+You are special,
+you are beautiful,
+and you mean a lot to me.
+
+<br><br>
+
+👑 Happy Birthday Princess 👑
+
+<br><br>
+
+❤️ I LOVE YOU ❤️
+
+</div>
+
+<footer>
 🌹 Forever & Always 🌹
+<br>
+Dhruv ❤️ Shagun
+</footer>
+
 </div>
 
 <script>
 function showSurprise(){
 document.getElementById("surprise").style.display="block";
+window.scrollTo({
+top:document.body.scrollHeight,
+behavior:'smooth'
+});
 }
 
-for(let i=0;i<25;i++){
+setInterval(()=>{
 let heart=document.createElement("div");
-heart.innerHTML="❤️";
 heart.className="heart";
+heart.innerHTML="❤️";
 heart.style.left=Math.random()*100+"vw";
-heart.style.animationDuration=(Math.random()*5+5)+"s";
+heart.style.fontSize=(20+Math.random()*30)+"px";
 document.body.appendChild(heart);
-}
+
+setTimeout(()=>{
+heart.remove();
+},5000);
+
+},300);
 </script>
 
 </body>
